@@ -1,0 +1,10 @@
+select{
+
+border-radius: 15px;
+outline: none;
+border: none;
+cursor: pointer;
+background-color: inherit;
+color: var(--font-light-color);
+border: 2px solid var(--primary-color);
+}

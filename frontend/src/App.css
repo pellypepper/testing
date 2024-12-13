@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+}
+body{
+  font-family: "Mirza", serif;
+
+  color: var(--font-light-color);
+  width: 100%;
+ 
+}
+
+
+:root{
+  --primary-color: #065a60;
+  --primary-color-light: #5c8778;
+  --primary-color-dark: #2b3a35;
+  --secondary-color: white;
+  --background-dark-color:  black;
+  --border-color: #2e344e;
+  --background-light-color: #f1f1f1;
+  --white-color: #FFF;
+  --font-light-color:  white;
+  --font-dark-color:  darkgrey;
+  --font-dark-color-2: #151515;
+  --sidebar-dark-color: #191d2b;
+  --scrollbar-bg-color: #383838;
+  --scrollbar-thump-color: #6b6b6b;
+  --scrollbar-track-color: #383838;
+
+
+  --xs-xs : .4rem:
+  --xs-sm : .6rem;
+  --xs-md : 8rem;
+  --xs-lg : 1rem;
+  --xs-xl : 1.2rem;
+
+   --mob-xs : .6rem:
+   --mob-sm : .8rem;
+   --mob-md : 1rem;
+   --mob-lg : 1.2rem;
+   --mob-xl : 1.4rem;
+
+
+
+   --med-xs : .8rem;
+   --med-sm : 1rem;
+   --med-md : 1.2rem;
+   --med-lg : 1.4rem;
+   --med-xl : 1.6rem;
+   
+
+   --big-xs : 1rem;
+   --big-sm : 1.2rem;
+    --big-md : 1.4rem;
+   --big-lg : 1.6rem;
+    --big-xl : 1.8rem;
+
+
+
+}

@@ -1,0 +1,103 @@
+
+
+.payment-section {
+    margin: 2rem 0 1rem 2rem;
+    max-width: 600px;
+
+    padding: 40px;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-title {
+
+    
+    font-size: var(--med-md);
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.payment-option:hover {
+    background-color: var(--primary-dark-color); /* Light blue background on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.payment-option label {
+    font-size: var(--med-sm);
+    color: #333;
+}
+.payment-btn{
+    gap: 10px;
+}
+
+.payment-btn button{
+    width: 150px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--med-sm);
+}
+
+@media screen and (max-width: 481px){
+    .payment-section .payment-title {
+
+    
+        font-size: var(--mob-md);
+     
+    }
+    .payment-section .payment-options .payment-option label {
+        font-size: var(--mob-sm);
+
+    }
+    .payment-section .payment-options .payment-btn button{
+        
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 390px){
+    .payment-section .payment-title {
+
+    
+        font-size: 12px;
+     
+    }
+    .payment-section .payment-options .payment-option label {
+        font-size: 12px;
+
+    }
+    .payment-section .payment-options .payment-btn button{
+        width: 100%;
+        font-size: 12px;
+    }
+    .payment-btn{
+
+        flex-direction: column;
+    }
+    
+}

@@ -1,0 +1,237 @@
+.card-section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9; /* Light background */
+}
+
+.card-wrapper {
+    margin: 2rem;
+    padding: 2rem;
+    width: 70%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    height: max-content;
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-text {
+    border-radius: 10px;
+    color: var(--background-dark-color);
+    display: flex;
+    padding: 0.2rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-text p {
+    font-size: 1.2rem; /* Medium-large font */
+    font-weight: 600;
+}
+
+.label {
+    width: 100%;
+}
+
+.payment-div {
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    border-bottom: none;
+
+    margin-top: 1rem;
+ 
+}
+label{
+    font-size: var(--med-sm);
+
+}
+
+.payment-div div {
+    padding: 10px;
+    margin-top: 1rem;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.payment-div div img {
+    width: 50px;
+    height: 40px;
+}
+
+
+
+
+.card-element {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-element:focus-within {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow */
+}
+
+.card-row:last-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem; /* Space between expiry and CVV */
+}
+
+.full-width {
+    width: 100%;
+}
+
+
+.button,.success-popup button,.error button {
+    width: 100%; 
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    margin-top: 1rem;
+}
+
+.button:hover, .success-popup button:hover, .error button:hover {
+    border: 2px solid var(--primary-color);
+    background-color: white; 
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(1); 
+}
+
+
+
+.success-popup {
+    padding: 30px;
+    background-color: var(--background-light-color);
+   height: max-content;
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+    margin: 0 auto;
+    display: flex;
+    gap: .8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px; 
+    z-index: 1000; 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+.error{
+    padding: 30px;
+    background-color: var(--background-light-color);
+   height: max-content;
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+    margin: 0 auto;
+    display: flex;
+    gap: .8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+flex-wrap: wrap;
+    border-radius: 5px; 
+    z-index: 1000; 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+    opacity: 1; 
+    transform: translateY(0); 
+    animation: shake 0.3s;
+}
+
+.success-popup-exit, .error-exit {
+    opacity: 0; /* Fade out effect */
+    transform: translateY(-20px); /* Move up slightly during fade out */
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 481px){
+    label{
+        font-size: 13px;
+    
+    }
+    .payment-div div img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    label{
+        font-size: 11px;
+    
+    }
+    .payment-div div img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    label{
+        font-size: var(--big-sm);
+    
+    }
+}
+
+@media (max-width: 600px) {
+    .error , .success-popup{
+        left: 5%;
+        right: 5%;
+        width: auto; /* Allow for more flexible width */
+    }
+}

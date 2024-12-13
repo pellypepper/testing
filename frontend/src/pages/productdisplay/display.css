@@ -1,0 +1,256 @@
+.product-section {
+    height: max-content;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+background-color: var(--font-light-color);
+
+}
+.product-wrapper{
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+
+}
+.product-section .product-image {
+
+    width: 100%;
+}
+.product-image img, .product-text{
+    height: 500px;
+    border-radius: 10px;
+    
+ 
+}
+.product-image img{
+
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.product-image{
+ 
+    border-radius: 10px;
+}
+.product-text{
+    background-color: white;
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
+
+.product-text h1{
+ 
+    font-size: var(--med-xl);
+    color: var(--background-dark-color);
+    font-weight: 600; 
+}
+
+.product-text p{
+    margin-top: 1rem;
+    font-size: var(--med-sm);
+    color: var(--background-dark-color);
+}
+.product-text h3{
+    margin-top: 1rem;
+    font-size: var(--med-md);
+    color: var(--background-dark-color);
+}
+
+
+.rating{
+    display: flex;
+    gap: 5px;
+    margin-top: 1rem;
+}
+
+.product-text .quantity-controls{
+    display: flex; /* Flex for better layout */
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: var(--background-dark-color);
+    border-radius: 10px;
+    padding: 10px; 
+    color: var(--font-light-color);
+}
+.quantity-controls button {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: var(--med-lg);
+    transition: color 0.3s;
+}
+
+.quantity-controls button:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: var(--background-dark-color);
+    border-radius: 10px;
+    padding: 1rem;
+    color: var(--font-light-color);
+}
+
+.reviews p{
+    font-size: var(--med-sm);
+    color: var(--primary-color);
+}
+
+.reviews span{
+    font-size: var(--med-xs);
+
+}
+
+.product-text .btn {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out, transform 0.2s; 
+    height: 50px;
+    border-radius: 10px;
+    font-size: var(--med-md);
+}
+
+.product-text .btn:hover {
+    
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+@media  screen and (max-width: 390px) {
+    .product-section .product-text h1{
+
+        font-size: 15px;
+    
+     
+    }
+    
+    .product-section .product-text p{
+   
+        font-size: 12px;
+       
+    }
+    .product-section .product-text h3{
+ 
+        font-size: 12px;
+
+    }
+    .product-section .quantity-controls button {
+    
+        font-size: 15px;
+
+    }
+
+    .product-section .reviews p{
+    font-size: 12px;
+   
+}
+
+.product-section .reviews span{
+    font-size: 12px;
+
+}
+.product-section .product-text .btn {
+
+    font-size: 12px;
+}
+    
+}
+
+@media  screen and (max-width: 481px) {
+ 
+    .product-text h1{
+
+        font-size: var(--mob-xl);
+    
+        font-weight: 400; 
+    }
+    
+    .product-text p{
+   
+        font-size: var(--mob-sm);
+       
+    }
+    .product-text h3{
+ 
+        font-size: var(--mob-md);
+
+    }
+    .quantity-controls button {
+    
+        font-size: var(--mob-lg);
+
+    }
+
+.reviews p{
+    font-size: var(--mob-sm);
+   
+}
+
+.reviews span{
+    font-size: var(--mob-xs);
+
+}
+.product-text .btn {
+
+    font-size: var(--mob-md);
+}
+    
+}
+@media screen and (max-width: 768px) {
+    .product-wrapper{
+   
+        grid-template-columns: 100%;
+      
+      
+      }
+}
+@media  screen and (min-width: 1024px) {
+    .product-text h1{
+
+        font-size: var(--big-xl);
+    
+    
+    }
+    
+    .product-text p{
+   
+        font-size: var(--big-sm);
+       
+    }
+    .product-text h3{
+ 
+        font-size: var(--big-md);
+
+    }
+    .quantity-controls button {
+    
+        font-size: var(--big-lg);
+
+    }
+
+.reviews p{
+    font-size: var(--big-sm);
+   
+}
+
+.reviews span{
+    font-size: var(--big-xs);
+
+}
+.product-text .btn {
+
+    font-size: var(--big-sm);
+}
+    
+}

@@ -1,0 +1,127 @@
+.Home{
+    overflow: hidden;
+}
+
+.home-text-wrapper{
+    background-image: url(../../assets/bg.jpg);
+    width: 100%;
+    min-height: 350px;
+
+}
+
+
+.home-text-wrapper .row{
+  height: 100%;
+
+    display: flex;
+    align-items: center;
+
+}
+.home-text-wrapper h1{
+
+    font-size: var(--med-xl);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.home-text-wrapper span{
+    font-size: var(--med-sm);
+}
+
+.home-text{
+ color: var(--font-light-color);
+
+
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+
+.home-btn{
+
+align-items: center;
+
+}
+.home-btn button{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    font-size: var(--med-md);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    text-align: center;
+
+    
+}
+.home-btn button:hover{
+  background-color: white;
+
+    color: var(--primary-color);
+}
+
+.whatsapp-logo{
+    position: fixed;
+    bottom: 2%;
+    right: 20px;
+}
+
+.whatsapp-logo span{
+    color: var(--font-light-color);
+
+}
+.whatsapp-logo a{
+    text-decoration: none;
+}
+.alert-popup {
+    position: fixed; 
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px; 
+    background-color:  white; 
+    color: var(--primary-color); 
+    border-radius: 5px; 
+    z-index: 1000; 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.alert-popup-exit {
+    opacity: 0; /* Fade out effect */
+    transform: translateY(-20px); /* Move up slightly during fade out */
+}
+
+@media screen and (max-width: 390px){
+    .Home .home-text-wrapper h1{
+        font-size: 20px;
+    }
+    .Home .home-text-wrapper span{
+        font-size: 12px;
+    }
+    .Home .home-btn button{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 481px){
+    .home-text-wrapper h1{
+        font-size: var(--mob-xl);
+    }
+    .home-text-wrapper span{
+        font-size: var(--mob-sm);
+    }
+    .home-btn button{
+        font-size: var(--mob-md);
+    }
+}
+@media screen and (min-width: 1024px){
+    .home-text-wrapper h1{
+        font-size: var(--big-xl);
+    }
+    .home-text-wrapper span{
+        font-size: var(--big-sm);
+    }
+    .home-btn button{
+        font-size: var(--big-md);
+    }
+}

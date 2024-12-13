@@ -1,0 +1,353 @@
+.cart-main{
+border-radius: 10px;
+
+    width: 70%;
+
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--background-dark-color);
+    cursor: pointer;
+    z-index: 1000;
+  color: var(--font-light-color);
+
+}
+.cart-section-text{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+ 
+}
+.cart-main .cart-section{
+    flex: 1;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+     
+    flex-direction: column;
+
+    height: 100%;
+
+   
+}
+.cart-list{
+
+    width: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; 
+
+    height: 75%;
+}
+.cart-section h2{
+    font-size: var(--med-sm);
+ 
+}
+.cart-section p{
+    font-size: var(--med-sm);
+ 
+}
+.cart-item{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--primary-color);
+    width: 100%;
+   
+    transition: background-color 0.3s ease;
+}
+.cart-item:hover {
+    background-color: var(--primary-color-light);
+    border-radius: 5px;
+}
+.cart-item button{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: .6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--primary-color);
+    width: 100%;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart-item-controls input {
+    width: 50px;
+    padding: 0.2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+.cart-total{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.cart-total h4{
+    font-size: var(--med-md);
+    font-weight: bold;
+  
+}
+
+.cart-item-controls .btn-2 , .cart-total button{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-size: var(--med-sm);
+}
+.cart-section-text{
+    margin-bottom: 1rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 20px;
+}
+.times{
+    font-size: var(--med-md);
+}
+ button:hover {
+    background-color: var(--primary-color-dark); /* Darken on hover */
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-controls button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-controls button:hover {
+    background-color: var(--primary-color-light);
+}
+
+.quantity-controls span {
+    display: inline-block;
+    min-width: 30px;
+    text-align: center;
+    font-size: var(--med-sm)
+}
+.alert-popup {
+    position: fixed; 
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px; 
+    background-color:  white; 
+    color: var(--primary-color); 
+    border-radius: 5px; 
+    z-index: 1000; 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.alert-popup-exit {
+    opacity: 0; /* Fade out effect */
+    transform: translateY(-20px); /* Move up slightly during fade out */
+}
+
+
+
+/* For WebKit browsers (Chrome, Safari) */
+.cart-list::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.cart-list::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+.cart-list::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Hover effect for the scrollbar thumb */
+.cart-list::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color-dark); /* Darken the thumb on hover */
+}
+
+/* For Firefox */
+.cart-list {
+    scrollbar-width: thin; /* Use thin scrollbar */
+    scrollbar-color: var(--primary-color) #f1f1f1; /* thumb color and track color */
+}
+@media screen and (max-width: 350px){
+   .cart-main .cart-section h2{
+        font-size:  12px;
+     
+    }
+    .cart-main .cart-section p{
+        font-size: 12px;
+     
+    }
+
+    .cart-main .quantity-controls span {
+
+    text-align: center;
+    font-size: 10px;
+}
+.cart-main .quantity-controls {
+      width: 100%;
+    
+      padding: 0;
+      gap: 0px;
+      justify-content: center;
+   
+}
+.cart-main .quantity-controls button {
+    font-size: 15px;
+   
+  
+}
+.cart-main .cart-item-details {
+display: flex;
+gap: 2px;
+
+}
+.cart-main .cart-item {
+
+    flex-direction: row;
+   gap: 1px;
+   justify-content: normal;
+   padding: 0;
+}
+.cart-item-controls {
+   flex-direction: column;
+}
+.cart-main .cart-item-controls .btn-2{
+    padding: 3px;
+    font-size: 10px;
+}
+.cart-main .cart-total h4{
+    font-size: 12px;
+    font-weight: bold;
+  
+}
+.cart-main .cart-total button{
+    font-size: 10px;
+}
+
+
+}
+
+@media screen and (max-width: 481px){
+    .cart-section h2{
+        font-size: var(--mob-sm);
+     
+    }
+    .cart-section p{
+        font-size: var(--mob-sm);
+     
+    }
+
+.quantity-controls span {
+
+    text-align: center;
+    font-size: var(--mob-sm)
+}
+.quantity-controls {
+
+    gap: 5px;
+}
+.quantity-controls button {
+    font-size: 10px;
+    padding: 0;
+
+}
+.cart-item-details {
+display: flex;
+gap: 30px;
+}
+.cart-item {
+ flex-direction: column;
+}
+.cart-item-controls {
+   flex-direction: column;
+}
+.cart-item-controls .btn-2{
+    padding: 3px;
+    font-size: 14px;
+}
+.cart-total h4{
+    font-size: var(--med-sm);
+    font-weight: bold;
+  
+}
+.cart-main .cart-total button{
+    font-size: var(--med-sm);
+}
+
+
+}
+
+@media screen and (min-width: 768px){
+    .cart-main{
+
+
+        width: 50%;
+      
+    
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .cart-section h2{
+        font-size: var(--big-md);
+     
+    }
+    .cart-section p{
+        font-size: var(--big-sm);
+     
+    }
+
+.quantity-controls span {
+
+  
+    font-size: var(--big-sm)
+}
+
+
+
+.cart-total h4{
+    font-size: var(--big-sm);
+    font-weight: bold;
+  
+}
+
+
+}

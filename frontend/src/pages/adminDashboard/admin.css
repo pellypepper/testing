@@ -1,0 +1,282 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color:  var(--background-lig-color); 
+}
+
+/* Dashboard Layout */
+.admin-dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50; 
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem; 
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #34495e; /* Sidebar item color */
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.sidebar ul li:hover {
+    background-color: #1abc9c; /* Highlight on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.sidebar ul li.active {
+    background-color: #e0e0e0; 
+    color: #2c3e50; 
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    flex-grow: 1;
+    padding: 30px; 
+    overflow-y: auto;
+}
+.products  h3{
+    text-align: center;
+}
+
+.products form {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.products form input {
+    margin-bottom: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
+    outline: none;
+}
+
+.products form button {
+    margin-top: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2c3e50; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Section Styles */
+.analytics {
+    margin-bottom: 30px;
+
+}
+
+/* Analytics Cards */
+.analytics-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.analytics-card {
+    background-color: #2c3e50; 
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex: 1;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s;
+    height: 150px;
+}
+
+.analytics-card:hover {
+    transform: translateY(-5px); 
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    gap: 20px; /* Gap between products */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+}
+
+/* Product Card Styles */
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); 
+}
+
+.product-card img {
+    width: 100%; 
+    max-width: 150px; 
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex; 
+    justify-content: center; 
+}
+
+.actions button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:#2c3e50; 
+    color: white; 
+    transition: background-color 0.3s; 
+}
+
+.actions button:hover {
+    background-color: #1abc9c; 
+}
+
+/* Order Summary Styles */
+.order-summary {
+    margin: 30px 0; /* Increased margin */
+}
+
+.top-products {
+    margin: 30px 0; /* Increased margin */
+}
+
+.top-products ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Table Styles */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 12px; /* Increased padding for better spacing */
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Border for rows */
+}
+
+.orders-table th {
+    background: #2c3e50;  /* Header background */
+    color: white; /* Header text color */
+    font-weight: bold; /* Bold text */
+}
+
+.orders-table tr:hover {
+    background: #f1f1f1; /* Highlight row on hover */
+}
+.top-products {
+    margin: 30px 0; /* Margin for spacing */
+}
+
+.top-products h3 {
+    font-size: 1.8rem; /* Header font size */
+    margin-bottom: 20px; /* Space below header */
+    color: #2c3e50; /* Darker color for better contrast */
+}
+
+.top-products-grid {
+    display: grid; /* Grid layout for products */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+}
+
+.top-product-card {
+    background-color: white; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center; /* Center text */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.top-product-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.product-price,
+.total-sales {
+    font-size: 1.1rem; /* Font size for product details */
+    margin: 10px 0; /* Space between text elements */
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.actions button {
+    padding: 8px 12px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #2c3e50;  
+    color: white;
+    transition: background-color 0.3s; 
+}
+
+.actions button:hover {
+    background-color: #1abc9c; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .admin-dashboard {
+        flex-direction: column; /* Stack sidebar and content on small screens */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width sidebar */
+        height: auto; /* Auto height */
+    }
+
+    .dashboard-content {
+        padding: 15px; /* Reduced padding */
+    }
+
+    .analytics-cards {
+        flex-direction: column; /* Stack cards */
+    }
+}

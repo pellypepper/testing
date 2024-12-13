@@ -1,0 +1,214 @@
+/* detail.css */
+.details-wrapper {
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.detail-info {
+    margin-bottom: 20px;
+    background-color: var(--font-dark-color-2);
+    padding: 1rem 0 1rem 1rem ;
+    border-radius: 10px;
+}
+.detail-info span{
+    color: var(--font-light-color);
+font-size:  var(--med-sm);
+}
+.detail-info h3 {
+ margin-top: .5rem;
+ color: var(--primary-color);
+ font-size:  var(--med-lg);
+}
+.details-wrapper h2{
+    color: var(--primary-color);
+    font-size:  var(--med-xl);
+    margin-bottom: 1rem;
+}
+.span{
+    font-size:  var(--med-sm); 
+}
+
+.details-acct {
+    width: max-content;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    margin-top: 20px;
+}
+
+.details-acct p {
+    margin: 5px 0;
+    font-size: var(--med-sm);
+    
+}
+
+.details-acct span {
+    font-weight: bold;
+    color: #555;
+}
+
+.dropdown-detail{
+    margin-top: 2rem;
+}
+.dropdown-text-section{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.dropdown-text-section p{
+    font-size: var(--med-sm);
+}
+.dropdown-text-section:hover{
+  cursor: pointer;
+  background-color: var( --font-dark-color);
+  border-radius: 10px;
+   padding: 10px;
+}
+
+.dropdown-content{
+
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 20px;
+}
+.dropdown-content button{
+    background-color: var(--primary-color);
+    color: var(--font-light-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-size: var(--med-sm);
+}
+.upload-section{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 150px;
+margin: 0 auto;
+width: 80% ;
+border: 1px dotted var(--primary-color);
+background-color: var(--font-light-color);
+}
+
+.upload-section input{
+
+
+    border-radius: 5px;
+    background-color: var( --font-dark-color);
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 390px) {
+  
+
+   .details-wrapper  .detail-info span{
+
+    font-size:  10px;
+    }
+   .details-wrapper .detail-info h3 {
+   
+     font-size:  12px;
+    }
+    .details-wrapper  .details-wrapper h2{
+  
+        font-size:  12px;
+ 
+    }
+    .details-wrapper  .span{
+        font-size:  12px; 
+    }
+    .details-wrapper  .details-acct p {
+ 
+        font-size: 12px;
+        
+    }
+    .dropdown-text-section p{
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width: 481px) {
+    .upload-section{
+     
+    width: 100% ;
+ 
+    }
+    .upload-section input{
+
+        font-size: 8px;
+  
+    }
+   .details-wrapper  .detail-info span{
+
+    font-size:  var(--mob-sm);
+    }
+   .details-wrapper .detail-info h3 {
+   
+     font-size:  var(--mob-lg);
+    }
+    .details-wrapper  .details-wrapper h2{
+  
+        font-size:  var(--mob-lg);
+ 
+    }
+    .details-wrapper  .span{
+        font-size:  15px; 
+    }
+    .details-wrapper  .details-acct p {
+ 
+        font-size: 15px;
+        
+    }
+    .dropdown-text-section p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .upload-section{
+        width: 100% ;
+
+ 
+    }
+    .upload-section input{
+
+
+      
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .detail-info span{
+
+    font-size:  var(--big-sm);
+    }
+    .detail-info h3 {
+   
+     font-size:  var(--big-lg);
+    }
+    .details-wrapper h2{
+  
+        font-size:  var(--big-xl);
+ 
+    }
+    .span{
+        font-size:  var(--big-sm); 
+    }
+    .details-acct p {
+ 
+        font-size: var(--big-sm);
+        
+    }
+    .dropdown-text-section p{
+        font-size: var(--mob-sm);
+    }
+}
